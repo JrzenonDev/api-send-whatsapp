@@ -8,14 +8,14 @@ class Sender {
   }
 
   private initialize() {
-    const qrcode = () => {
-
+    const qrcode = (base64Qrimg: string) => {
+      console.log()
     }
-    const status = () => {
+    const status = (statusSession: string) => {
 
     }
     const start = (client: Whatsapp) => {
-
+      this.client = client
     }
 
     create('ws-sender-dev', qrcode, status)
@@ -24,3 +24,4 @@ class Sender {
   }
 }
 
+export default Sender
